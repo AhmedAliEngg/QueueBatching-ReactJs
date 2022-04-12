@@ -10,10 +10,10 @@ function App() {
       <h1>{number}</h1>
       {/* batching process */}
       <button onClick={()=>{
-        setNumber(n => n+1);
-        setNumber(n => n+1);
-        setNumber(n => n+1);
-    }}>+3</button>
+        setNumber(number + 5);
+        setNumber(n => n + 1);
+        setNumber(42);
+    }}>Increase the number</button>
     </>
   );
 }
